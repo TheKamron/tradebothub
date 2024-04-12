@@ -8,7 +8,7 @@ import session from "express-session"
 dotenv.config()
 
 // Middlewares
-import varMiddleware from "../Project/middleware/var.js"
+import varMiddleware from "./middleware/var.js"
 
 // Routes
 import AuthRoutes from "./routes/auth.js"
