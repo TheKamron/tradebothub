@@ -9,7 +9,7 @@ const router = Router()
 router.get('/product', async (req, res) => {
     const products = await Product.find().lean()
     res.render('product', {
-        title: 'Products | TB', 
+        title: 'Products', 
         isProduct: true,
         products: products,
     })

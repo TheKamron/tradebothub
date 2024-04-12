@@ -13,7 +13,7 @@ const router = Router()
 
 router.get('/login', authMiddleware, (req, res) => {
     res.render('login', {
-        title: "Login | TB",
+        title: "Login",
         isLogin: true,
         loginError: req.flash('loginError')
     })
@@ -51,7 +51,7 @@ router.get('/admin-dashboard', async (req, res) => {
 
 router.get('/register', authMiddleware, (req, res) => {
     res.render('register', {
-        title: "Register | TB",
+        title: "Register",
         isRegister: true,
         registerError: req.flash('registerError')
     })

@@ -37,13 +37,13 @@ router.get('/orders', async (req,res) => {
 
 router.get('/about', (req, res) => {
     res.render('about', {
-        title: "About Us | TB"
+        title: "About Us"
     })
 })
 
 router.get("/contact", (req, res) => {
     res.render('contact', {
-        title: "Contact Us | TradeBotHub"
+        title: "Contact Us"
     })
 })
 
@@ -90,8 +90,5 @@ router.post('/subscribe', async (req, res) => {
     const subs = await Subscribe.create(req.body)   
     res.redirect('/')
 })
-
-
-
 
 export default router
