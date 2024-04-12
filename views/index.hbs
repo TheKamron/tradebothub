@@ -1,0 +1,389 @@
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title> Trading Bots </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="font-awesome.min.css" rel="stylesheet" />
+  <link href="font-awesome.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="index.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- start header section strats -->
+    
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="/">
+            <span>
+              TradeBotHub
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              {{#if token}} 
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-danger" href="/logout">Logout</a>
+               </li> 
+              {{else}} 
+            {{#if isLogin}}
+            {{!-- Active Button --}}
+                <li class="nav-item">
+                <a class="nav-link btn btn-outline-primary active" href="/login">Login</a>
+               </li>
+          {{else}}
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-primary" href="/login">Login</a>
+               </li>
+          {{/if}}
+          {{!-- Active Button --}}
+           {{/if}}  
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- end header section --> 
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Welcome to  <br>
+                      TradeBotHub
+                    </h1>
+                    <p>
+Ready to take your trading to the next level? Sign up for a free account today and explore the possibilities of automated trading with TradeBotHub. Whether you're looking to diversify your portfolio, minimize risk, or capitalize on market opportunities, our bots are here to help you achieve your financial goals!
+                    </p>
+                    <div class="btn-box">
+                      <a href="/product" class="btn1">
+                        Start Now!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="slider-img.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Our <span>Services</span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="s1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Automate Your Trading
+                </h5>
+                <p>
+               Our trading bots are equipped with advanced algorithms and strategies to execute trades on your behalf, allowing you to take advantage of market fluctuations and opportunities 24/7.
+                </p>
+                <a href="/product">
+                  Start Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="s2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Secure Access
+                </h5>
+                <p>
+                 Our platform utilizes multi-factor authentication and secure login procedures to prevent unauthorized access to your account, giving you peace of mind knowing that your funds are safe!
+                </p>
+                <a href="/login">
+                  Join Us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="s3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Support and Guidance
+                </h5>
+                <p>
+                 Our sales professionals are here to provide personal support and guidance every step of the way. Whether you need help setting up your bots or optimizing your strategy, we're here!
+                </p>
+                <a href="/contact">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{!-- <div class="btn-box">
+          <a href="">
+            View All
+          </a>
+        </div> --}}
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+   <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2>
+          About <span>Us</span>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              We Are TradeBotHub
+            </h3>
+            <p>
+            Welcome to TradeBotHub, your ultimate destination for all things related to trading bots. Whether you're a seasoned trader looking to automate your strategies or a newcomer intrigued by the possibilities of algorithmic trading, TradeBotHub is here to empower you with the tools and knowledge you need to succeed in the financial markets.
+            </p>
+            <p>
+At TradeBotHub, we understand the power of automation in trading. Our platform offers a comprehensive range of both free and premium trading bots designed to cater to traders of all experience levels. With a focus on simplicity, reliability, and performance, our bots are crafted to help you optimize your trading activities, save time, and maximize your profits.            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Why Choose <span>Us</span>
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="w1.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+             Expertise in Trading Automation
+            </h5>
+            <p>
+At TradeBotHub, we specialize in the development and implementation of cutting-edge trading bots. With years of experience in the financial markets and expertise in algorithmic trading, our team is uniquely positioned to help you navigate the complexities of automated trading with confidence.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="w2.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Comprehensive Bot Selection
+            </h5>
+            <p>
+We offer a wide range of both free and premium trading bots designed to suit every trader's needs. Whether you're a beginner exploring the world of automated trading or an experienced trader seeking advanced strategies, TradeBotHub has the perfect bot for you.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="w3.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+           Ongoing Support and Guidance
+            </h5>
+            <p>
+At TradeBotHub, we're committed to your success. Our team of trading experts is here to provide personalized support and guidance every step of the way, helping you maximize the potential of your trading bot and navigate the ever-changing landscape of the financial markets.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="w4.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Happy Customers
+            </h5>
+            <p>
+At TradeBotHub, our customers' satisfaction is our top priority. From crypto investors to forex traders and stock enthusiasts, our platform has empowered traders worldwide to achieve their financial goals with confidence.
+With easy-to-use bots, personalized support, and proven results, TradeBotHub is the trusted choice for traders seeking success in the markets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+TradeBotHub is your go-to platform for automated trading solutions. Whether you're a beginner looking to streamline your trading process or an experienced trader seeking advanced strategies, TradeBotHub has the tools and expertise to help you succeed in the financial markets.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="/">
+                Home
+              </a>
+              <a class="" href="/about">
+                About
+              </a>
+              <a class="" href="/product">
+                Product
+              </a>
+               <a class="" href="/contact">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+           Subscribe to our newsletter for the latest news, updates, and special offers.
+          </h4>
+          <form action="/subscribe" method="post">
+            <input type="email" name="email" placeholder="Enter email" />
+            <button class="sub-btn" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By OFFCODEV
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<head>
+	{{!-- <link rel="stylesheet" href="nav.css"> --}}
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Add Product</title>
+</head>
+
+<div class="wrapper">
+    <div class="main_content">
+        <div class="info">
+        {{!-- Form --}}
+        <div class="w-75 mx-auto">
+                    <p class="fs-1">Edit Product</p>
+        <form action="/edit-product/{{product._id}}" method="post"> 
+                
+                <div class="form-floating mb-3">
+         <input type="text" value="{{product.title}}" class="form-control" name="title" id="floatingInput" placeholder="Title">
+         <label for="floatingInput">Title</label>
+                </div>
+            <div class="form-floating mb-3">
+        <textarea class="form-control" name="description"  id="description" style="height: 100px">{{product.description}}</textarea>
+        <label for="floatingTextarea2">Description</label>
+           </div>
+
+        <div class="input-group mb-3 mt-3">
+        {{!-- <span class="input-group-text fs-0">$</span> --}}
+        <div class="form-floating">
+        <input type="number" value="{{product.price}}" class="form-control" name="price" id="price" placeholder="Price">
+        <label for="floatingInputGroup1">$ Price</label>
+         </div>
+        </div>
+
+        <button class="btn btn-primary">Edit</button>
+            </form>
+        </div>
+
+        <br>
+      
+</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<head>
+	<link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="analystic-card">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <title>Admin Dashboard</title>
+</head>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h4> <a class="text-decoration-none" href="/admin-dashboard">Admin Dashboard</a></h4>
+        <ul>
+            <li><a href="/add"><i class="fas fa-plus"></i>Add Product</a></li>
+            <li><a href="/my-products"><i class="fas fa-shopping-cart"></i>Products</a></li>
+            <li><a href="/messages"><i class="fas fa-comment"></i>Messages</a></li>
+            <li><a href="/orders"><i class="fas fa-shopping-bag"></i>Orders</a></li>
+            <li class="logout-btn"><a class="btn btn-outline-danger" href="/logout">Logout</a></li>
+        </ul> 
+    </div>
+    
+    <div class="main_content">
+        <div class="header">Welcome!! Have a nice day.</div>  
+        <div class="info">
+
+ <div class="analystic">
+<div class="card">
+  <div class="card-details">
+    <p class="text-title text-info">Products</p>
+    <p class="text-primary display-4 text-center">{{{products.length}}}</p>
+  </div>
+</div>
+
+ <div class="card">
+  <div class="card-details">
+    <p class="text-title text-info ">Subscribers</p>
+    <p class="text-warning display-4 text-center">{{subscribers.length}}</p>
+  </div>
+</div>
+
+ <div class="card">
+  <div class="card-details">
+    <p class="text-title text-info">Users</p>
+    <p class="text-success display-4 text-center">{{users.length}}</p>
+  </div>
+</div>
+
+ <div class="card">
+  <div class="card-details text-info">
+    <p class="text-title">Messages</p>
+    <p class="text-danger display-4 text-center">{{messages.length}}</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-details text-info">
+    <p class="text-title">Orders</p>
+    <p class="text-secondary display-4 text-center">{{orders.length}}</p>
+  </div>
+</div>
+ </div>
+
+      </div>
+    </div>
+</div>

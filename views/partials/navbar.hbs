@@ -1,0 +1,36 @@
+<div class="containe">
+
+<header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item "><a href="/product" class="nav-link">Product </a></li>
+        <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                      
+        {{#if token}} 
+<button type="button" class="btn btn-danger"> <a class="text-decoration-none text-light" href="/logout">Logout</a> </button>
+        {{else}} 
+        {{#if isLogin}}
+                          {{!-- Login Button --}}
+        <button type="button" class="btn btn-primary active"> <a class="text-decoration-none text-light" href="/login">Login</a> </button>
+          {{else}}
+        <button type="button" class="btn btn-primary"> <a class="text-decoration-none text-light" href="/login">Login</a> </button>
+          {{/if}}
+                           {{!-- Login Button --}} 
+        {{/if}}                      
+                              
+        {{!-- {{#if isRegister}} 
+<button type="button" class="btn btn-success active"> <a class="text-decoration-none text-light" href="/register">Sign in </a> </button>
+        {{else}} 
+<button type="button" class="btn btn-success"> <a class="text-decoration-none text-light" href="/register">Sign in </a> </button>
+        {{/if}}                    --}}
+
+      
+</div>
+      </ul>
+    </header>
+
+
+
+
+</div>

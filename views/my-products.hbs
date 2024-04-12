@@ -1,0 +1,45 @@
+<head>
+	<link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="my-product.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <title>Admin Dashboard</title>
+</head>
+
+<div class="wrapper">
+    <div class="sidebar">
+         <h4><a class="text-decoration-none" href="/admin-dashboard">Admin Dashboard</a></h4>
+        <ul>
+            <li><a href="/add"><i class="fas fa-plus"></i>Add Product</a></li>
+            <li><a href="/my-products"><i class="fas fa-shopping-cart"></i>Products</a></li>
+            <li><a href="/messages"><i class="fas fa-comment"></i>Messages</a></li>
+            <li><a href="/orders"><i class="fas fa-shopping-bag"></i>Orders</a></li>
+            <li class="logout-btn"><a class="btn btn-outline-danger" href="/logout">Logout</a></li>
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header">My Products</div>  
+        <div class="info">
+
+
+           {{#if products.length}} 
+        <div class="cookie-card">
+         
+            {{#each products}}
+            <div class="cards">
+            <span class="title">{{title}}</span>
+                <p class="description">{{description}}</p>
+                <div class="actions">
+                    <a href="/edit-product/{{_id}}" class="btn btn-outline-primary">Edit</a>
+                    <a href="/delete-product/{{_id}}" class="btn btn-outline-danger">Delete</a>
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
+           {{else}}
+                <p>No Product!</p>
+           {{/if}}
+
+      </div>
+    </div>
+</div>
