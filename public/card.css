@@ -71,6 +71,27 @@ button {
   text-shadow: 0px 4px 18px #2c3442;
 }
 
+/* Responsive Style */
+@media (max-width: 768px) {
+  .__card .card {
+    width: 45%; /* Misolcha, kartalar eng kichik ekranlarda 45% hajmda bo'lishi kerak */
+  }
+}
+
+@media (max-width: 768px) {
+  .content .price {
+    font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    button {
+      font-size: 0.5rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  /* End Responsive Style line */
+
 /* The Modal (background) */
  .modal {
   display: none; /* Hidden by default */
