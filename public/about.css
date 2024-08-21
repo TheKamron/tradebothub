@@ -136,6 +136,7 @@ a:focus {
 
 .header_section {
   padding: 15px 0;
+
 }
 
 .header_section .container-fluid {
@@ -155,6 +156,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav {
   margin-left: auto;
+  
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
@@ -197,6 +199,7 @@ a:focus {
   height: 42px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  
 }
 
 .custom_nav-container .navbar-toggler span {
